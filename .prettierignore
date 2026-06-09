@@ -1,0 +1,13 @@
+.direnv
+.git
+.github
+.next
+.vscode
+docs
+node_modules
+build
+coverage
+.prettierrc
+package.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
