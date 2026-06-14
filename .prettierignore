@@ -3,7 +3,6 @@
 .github
 .next
 .vscode
-docs
 node_modules
 build
 coverage

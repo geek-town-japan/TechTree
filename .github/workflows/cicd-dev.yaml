@@ -64,7 +64,7 @@ jobs:
 
     # GitHub上では「development」環境として扱う
     # Vercel上では production deployment を使うが、このプロジェクト自体は開発環境用
-    environment: development
+    environment: Development
 
     permissions:
       contents: read
