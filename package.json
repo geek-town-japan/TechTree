@@ -10,7 +10,9 @@
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "typecheck": "tsc --noEmit",
-    "typecheck:full": "tsc --noEmit --skipLibCheck false"
+    "typecheck:full": "tsc --noEmit --skipLibCheck false",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "next": "16.2.7",
@@ -30,6 +32,10 @@
     "prettier": "3.8.3",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vercel": "^54.9.0"
+    "vercel": "^54.9.0",
+    "storybook": "10.4.4",
+    "@storybook/nextjs-vite": "10.4.4",
+    "vite": "^8.0.16",
+    "eslint-plugin-storybook": "10.4.4"
   }
 }
