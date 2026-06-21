@@ -16,9 +16,6 @@ import {
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
 import Image from "next/image"
-import Gajumaru from "./assets/gajumaru.svg"
-import GoogleLogo from "./assets/google-logo.svg"
-import DiscordLogo from "./assets/discord-logo.svg"
 import { Roboto } from "next/font/google"
 
 const roboto = Roboto({
@@ -35,7 +32,7 @@ export default function LoginPage() {
             <CardHeader className="text-center pb-5">
               <CardTitle>
                 <Image
-                  src={Gajumaru}
+                  src="./gajumaru.svg"
                   alt="ガジュマル先生"
                   width={100}
                   height={100}
@@ -56,7 +53,7 @@ export default function LoginPage() {
                       className={`${roboto.className} bg-[#131314] hover:bg-[#424243] border-[#8E918F] text-[#E3E3E3] h-[40px] max-w-[400px] rounded-[20px] px-[12px] text-[14px] gap-0 cursor-pointer`}
                     >
                       <Image
-                        src={GoogleLogo}
+                        src="./google-logo.svg"
                         alt="Googleロゴ"
                         width={20}
                         height={20}
@@ -69,7 +66,7 @@ export default function LoginPage() {
                       className={`${roboto.className} bg-[#5865F2] hover:bg-[#7984F5] border-[#5865F2] text-white h-[40px] max-w-[400px] rounded-[20px] px-[12px] text-[14px] gap-0 cursor-pointer`}
                     >
                       <Image
-                        src={DiscordLogo}
+                        src="./discord-logo.svg"
                         alt="Discordロゴ"
                         width={20}
                         height={20}
