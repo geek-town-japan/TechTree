@@ -14,6 +14,9 @@ Discordコミュニティ向けのエンジニアスキル可視化Webアプリ
 │    │    ├── feature.md
 │    │    ├── spike.md
 │    │    └── task.md
+│    ├── workflows
+│    │    ├── ci.yaml
+│    │    └── cicd-dev.yaml
 │    └── pull_request_template.md
 ├── .vscode
 │    └── extensions.json
@@ -22,13 +25,20 @@ Discordコミュニティ向けのエンジニアスキル可視化Webアプリ
 ├── public
 │    └── ...
 ├── src
-│    └── app
+│    ├── app
+│    │    └── ...
+│    ├── components
+│    │    └── ...
+│    ├── lib
+│    │    └── ...
+│    └── stories
 │         └── ...
 ├── .envrc
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc
 ├── README.md
+├── components.json
 ├── eslint.config.mjs
 ├── flake.lock
 ├── flake.nix
@@ -37,7 +47,8 @@ Discordコミュニティ向けのエンジニアスキル可視化Webアプリ
 ├── pnpm-lock.yaml
 ├── pnpm-workspace.yaml
 ├── postcss.config.mjs
-└── tsconfig.json
+├── tsconfig.json
+└── vercel.ts
 ```
 
 ## プロジェクト管理
@@ -151,14 +162,18 @@ pnpm dev
 
 ## 主要コマンド
 
-| コマンド            | 内容                      |
-| ------------------- | ------------------------- |
-| `pnpm dev`          | Next.js開発サーバーを起動 |
-| `pnpm build`        | 本番ビルドを作成          |
-| `pnpm start`        | 本番サーバーを起動        |
-| `pnpm lint`         | ESLintを実行              |
-| `pnpm format`       | Prettierで整形            |
-| `pnpm format:check` | Prettierの整形状態を確認  |
+| コマンド               | 内容                        |
+| ---------------------- | --------------------------- |
+| `pnpm dev`             | Next.js開発サーバーを起動   |
+| `pnpm build`           | 本番ビルドを作成            |
+| `pnpm start`           | 本番サーバーを起動          |
+| `pnpm lint`            | ESLintを実行                |
+| `pnpm format`          | Prettierで整形              |
+| `pnpm format:check`    | Prettierの整形状態を確認    |
+| `pnpm typecheck`       | TypeScriptの型検査を実行    |
+| `pnpm typecheck:full`  | 型定義を含めて型検査を実行  |
+| `pnpm storybook`       | Storybook開発サーバーを起動 |
+| `pnpm build-storybook` | Storybookの静的ビルドを作成 |
 
 ## ドキュメント
 
